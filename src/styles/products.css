@@ -60,6 +60,19 @@ h4::after {
   color: var(--button-txt-color);
 }
 
+.button-next-page {
+  width: 16.25rem;
+  height: 30px;
+}
+
+.list-more {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 3.875rem;
+  margin-bottom: 8rem;
+}
+
 @media (max-width: 768px) {
   .list-products {
     display: flex;
@@ -89,5 +102,9 @@ h4::after {
 
   .description {
     display: none;
+  }
+
+  .list-more {
+    margin-top: 3.25rem;
   }
 }

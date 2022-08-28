@@ -38,6 +38,7 @@ header {
 }
 
 .button-header {
+  cursor: pointer;
   text-decoration: "none";
   height: 2.5rem;
   border: 1px solid var(--main-bg-color);
@@ -45,6 +46,11 @@ header {
   width: 10rem;
   border-radius: 0.25rem;
   color: var(--button-txt-color);
+}
+
+.button-header:hover {
+  background-color: var(--button-txt-color);
+  color: var(--header-txt-color);
 }
 
 @media (max-width: 768px) {
