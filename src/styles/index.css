@@ -3,12 +3,13 @@
   --header-txt-color: #ffffff;
   --button-txt-color: #888888;
   font-family: Helvetica;
+  --scrollbar: 20px;
 }
 
 body {
   display: flex;
   flex-direction: column;
-  width: 100vw;
+  width: calc(100vw - var(--scrollbar));
   margin: 0;
   align-items: center;
 }
