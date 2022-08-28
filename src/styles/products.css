@@ -1,0 +1,36 @@
+.products-section h4 {
+  display: flex;
+  flex-direction: row;
+  margin-top: 4.4rem;
+  margin-bottom: 3.125rem;
+  align-items: center;
+  font-size: 18px;
+  color: var(--button-txt-color);
+}
+
+.products-section h4::before,
+h4::after {
+  content: "";
+  flex: 1 1;
+  border-bottom: 1px solid var(--main-bg-color);
+  margin-right: 1rem;
+  margin-left: 1rem;
+}
+
+.list-products {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 2.5rem;
+}
+
+.button-product {
+  height: 1.875rem;
+}
+
+@media (max-width: 768px) {
+  .list-products {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 10px 0px 10px;
+  }
+}

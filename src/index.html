@@ -5,13 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Teste Linx</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <link
       rel="stylesheet"
       type="text/css"
       media="screen"
       href="./styles/index.css"
     />
-    <script src="main.js"></script>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="./styles/header.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="./styles/newsletter.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="./styles/products.css"
+    />
+    <script src="scripts/listProducts.js" defer></script>
   </head>
 
   <body>
@@ -26,13 +45,13 @@
       </div>
 
       <div class="buttons">
-        <button class="button">Conheça a Linx</button>
+        <button class="button-header">Conheça a Linx</button>
 
-        <button class="button">Ajude o algorítmo</button>
+        <button class="button-header">Ajude o algorítmo</button>
 
-        <button class="button">Seus produtos</button>
+        <button class="button-header">Seus produtos</button>
 
-        <button class="button">Compartilhe</button>
+        <button class="button-header">Compartilhe</button>
       </div>
 
       <div class="triangle"></div>
@@ -94,6 +113,12 @@
 
           <button class="button" style="width: 100%">Enviar</button>
         </div>
+      </div>
+
+      <div class="products-section">
+        <h4>Sua seleção especial</h4>
+
+        <div class="list-products"></div>
       </div>
     </div>
   </body>
