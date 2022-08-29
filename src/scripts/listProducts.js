@@ -3,6 +3,7 @@ const listProducts = document.querySelector(".list-products");
 var nextPage =
   "https://frontend-intern-challenge-api.iurykrieger.vercel.app/products?page=1";
 
+// Função que cria o componente do produto, adicionando ao html da lista
 const createProduct = (product) => {
   const { image, name, oldPrice, price, description, installments } = product;
 
@@ -24,6 +25,7 @@ const createProduct = (product) => {
     `;
 };
 
+// Função que faz a chamada da próxima página da api
 const renderNextPage = () => {
   axios.get(nextPage).then((res) => {
     const { data } = res;
@@ -38,4 +40,5 @@ const renderNextPage = () => {
   });
 };
 
+// Chamada para renderizar a primeira página da api
 renderNextPage();

@@ -68,6 +68,10 @@ input {
   height: 30px;
 }
 
+form {
+  width: 100%;
+}
+
 #drop-icon {
   display: none;
 }
@@ -78,6 +82,11 @@ input {
 
 .dropdown-content {
   display: block;
+}
+
+#masc,
+#fem {
+  cursor: pointer;
 }
 
 @media (max-width: 768px) {

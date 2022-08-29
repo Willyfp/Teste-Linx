@@ -30,8 +30,22 @@
       media="screen"
       href="./styles/products.css"
     />
-    <script src="scripts/listProducts.js" defer></script>
+    <link
+    rel="stylesheet"
+    type="text/css"
+    media="screen"
+    href="./styles/share.css"
+    />
+    <link
+    rel="stylesheet"
+    type="text/css"
+    media="screen"
+    href="./styles/footer.css"
+    />
+      <script src="scripts/listProducts.js" defer></script>
     <script src="scripts/dropdown.js" defer></script>
+    <script src="scripts/form.js" defer></script>
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
 
@@ -89,35 +103,37 @@
           </div>
         </div>
 
-        <div class="newsletter-form">
-          <div class="input-view">
-            <label>Seu nome</label>
-            <input />
-          </div>
-
-          <div class="input-view">
-            <label>E-mail</label>
-            <input />
-          </div>
-
-          <div class="input-view">
-            <label>CPF</label>
-            <input />
-          </div>
-
-          <div class="radio-view">
-            <div class="radio-button">
-              <input type="radio" value="Masculino" id="masc" />
-              <label for="masc">Masculino</label>
+        <form id="form-newsletter">
+          <div class="newsletter-form">
+            <div class="input-view">
+              <label>Seu nome:</label>
+              <input required />
             </div>
 
-            <div class="radio-button">
-              <input type="radio" value="Feminino" id="fem" />
-              <label for="fem">Feminino</label>
+            <div class="input-view">
+              <label>E-mail:</label>
+              <input required type="email" />
             </div>
-          </div>
 
-          <button class="button">Enviar</button>
+            <div class="input-view">
+              <label>CPF:</label>
+              <input required oninput="maskCpf(this)" />
+            </div>
+
+            <div class="radio-view">
+              <div class="radio-button">
+                <input required name="gender" type="radio" value="Masculino" id="masc" />
+                <label for="masc">Masculino</label>
+              </div>
+
+              <div class="radio-button">
+                <input required name="gender" type="radio" value="Feminino" id="fem" />
+                <label for="fem">Feminino</label>
+              </div>
+            </div>
+
+            <button class="button" type="submit">Enviar</button>
+          </form>
         </div>
       </div>
 
@@ -132,6 +148,41 @@
           </button>
         </div>
       </div>
+      
+      <h4 class="inline-title">Compartilhe a novidade</h4>
+
+      <form id="form-share" >
+        <div class="share-section">
+
+          <h5>Quer que seus amigos também ganhem a lista personalizada deles? Preencha agora!</h5>
+
+            <div class="form-share">
+              <div class="input-view">
+                <label>Nome do seu amigo:</label>
+                <input required class="input-share"/>
+              </div>
+
+              <div class="input-view">
+                <label>E-mail:</label>
+                <input required type="email" class="input-share"/>
+              </div>
+            </div>
+
+            <button class="button button-next-page" type="submit">
+              Enviar agora!
+            </button>
+        </div>
+      </form>
     </div>
+    
+    <footer>  
+      <div class="mask"></div>
+      <p>Testando suas habilidades em HTML, CSS e JS.
+        <br/>
+        Linx Impulse
+        <br/>
+        2019
+      </p>
+    </footer> 
   </body>
 </html>
