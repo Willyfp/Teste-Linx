@@ -1,0 +1,99 @@
+.list-products-email {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5rem;
+  justify-content: center;
+}
+
+.title-email {
+  margin: 0px 21px 0px 21px;
+}
+
+.title-email h2 {
+  margin-bottom: 9px;
+  font-size: 20px;
+  color: var(--button-txt-color);
+  font-weight: normal;
+}
+
+.title-email p {
+  margin: 0px 0px 17px 0px;
+  font-size: 12px;
+  color: var(--button-txt-color);
+}
+
+.products-section h4 {
+  display: flex;
+  flex-direction: row;
+  margin-top: 4.4rem;
+  margin-bottom: 3.125rem;
+  align-items: center;
+  font-size: 18px;
+  color: var(--button-txt-color);
+}
+
+.products-section h4::before,
+h4::after {
+  content: "";
+  flex: 1 1;
+  border-bottom: 1px solid var(--main-bg-color);
+  margin-right: 1rem;
+  margin-left: 1rem;
+}
+
+.button-product {
+  height: 1.875rem;
+}
+
+.product {
+  width: 12.5rem;
+}
+
+.image-div {
+  width: 100%;
+  height: 9.375rem;
+  border: 1px solid var(--main-bg-color);
+  margin-bottom: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.product h3 {
+  font-size: 14px;
+  font-weight: normal;
+  color: var(--button-txt-color);
+  text-align: justify;
+  margin: 0;
+}
+
+.product p {
+  font-size: 12px;
+  color: var(--button-txt-color);
+  text-align: justify;
+}
+
+.product h2 {
+  font-size: 16px;
+  color: var(--button-txt-color);
+}
+
+.button-next-page {
+  width: 16.25rem;
+  height: 40px;
+}
+
+.list-more {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 3.875rem;
+  margin-bottom: 8rem;
+}
+
+@media (max-width: 768px) {
+  .info {
+    display: flex;
+    align-items: center;
+  }
+}
